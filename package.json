@@ -1,0 +1,26 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "page for a place to eat",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bafox2/LandingPage.git"
+  },
+  "keywords": [
+    "landing"
+  ],
+  "author": "ben fox",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bafox2/LandingPage/issues"
+  },
+  "homepage": "https://github.com/bafox2/LandingPage#readme",
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
