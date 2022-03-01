@@ -3,20 +3,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { Loader } = require('google-maps');
 
 module.exports = {
+    mode: 'development',
     entry: './src/index.js',
+    devtool: 'inline-source-map',
     devServer: {
-
         static: './dist',
-
     },
     plugins: [
-
         new HtmlWebpackPlugin({
-
             title: 'Output Management',
-
         }),
-
     ],
     output: {
         filename: 'bundle.js',

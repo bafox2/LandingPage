@@ -18,7 +18,6 @@ let header = (() => {
     navbar.appendChild(menu)
     navbar.appendChild(contact)
     document.querySelector('body').appendChild(header)
-    document.querySelector('#content').appendChild(header)
 })();
 
 export default header;

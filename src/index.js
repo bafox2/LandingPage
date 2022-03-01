@@ -1,5 +1,6 @@
-// import './styles.css';
+// // import './styles.css';
 import header from './header.js';
+import contact from './contact.js';
 import footer from './footer.js';
 // import './welcome.js';
 // import './footer.js';
@@ -12,6 +13,6 @@ import footer from './footer.js';
 
 //add header
 //add footer
-console.log('workingbig')
 header()
 footer()
+contact()

@@ -1,4 +1,4 @@
-import { Loader, LoaderOptions } from 'google-maps';
+// import { Loader } from '@googlemaps/js-api-loader';
 
 
 
@@ -9,20 +9,32 @@ let contact = (() => {
     phone.innerText = "703-555-5555"
     let address = document.createElement('p')
     address.innerText = "408 W St Clair Ave, Cleveland, OH 44113"
-    let mapwrapper = document.createElement('#map')
-    const options: LoaderOptions = { /* todo */ };
-    const loader = new Loader('AIzaSyCO_zgzQPLw8QumirmZWjHwgRDFrdIMooM', options);
+    let mapwrapper = document.createElement('div')
+    mapwrapper.id = ('map')
 
-    const google = await loader.load();
-    const map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 8,
-    });
-
+    // const loader = new Loader({
+    //     apiKey: "AIzaSyCO_zgzQPLw8QumirmZWjHwgRDFrdIMooM",
+    //     version: "weekly",
+    //     libraries: ["places"]
+    // });
+    // const mapOptions = {
+    //     center: {
+    //         lat: 0,
+    //         lng: 0
+    //     },
+    //     zoom: 4
+    // };
+    // loader.load()
+    //     .then((google) => {
+    //         new google.maps.Map(document.getElementById("map"), mapOptions);
+    //     })
+    //     .catch(e => {
+    //         // do something
+    //     });
 
     contactdiv.appendChild(phone)
     contactdiv.appendChild(address)
     contactdiv.appendChild(mapwrapper)
-    document.querySelector('#content').appendChild(footer)
+    document.querySelector('body').appendChild(contactdiv)
 })();
-export default contact;
+export default { contact };

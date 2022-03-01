@@ -31,6 +31,6 @@
         "webpack-dev-server": "^4.7.4"
     },
     "dependencies": {
-        "google-maps": "^4.3.3"
+        "@googlemaps/js-api-loader": "^1.13.7"
     }
 }
