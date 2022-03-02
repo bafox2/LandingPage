@@ -13,7 +13,7 @@ let contact = (() => {
     mapwrapper.id = ('map')
 
     // const loader = new Loader({
-    //     apiKey: "AIzaSyCO_zgzQPLw8QumirmZWjHwgRDFrdIoM",
+    //     apiKey: "AIzaSyCO_zgzQPLw8QumirmZWjHwgRDFrdIgitoM",
     //     version: "weekly",
     //     libraries: ["places"]
     // });

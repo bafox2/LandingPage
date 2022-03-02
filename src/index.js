@@ -2,6 +2,7 @@
 import header from './header.js';
 import contact from './contact.js';
 import footer from './footer.js';
+import about from './about.js';
 // import './welcome.js';
 // import './footer.js';
 //import Icon from './icon.png';
@@ -16,3 +17,4 @@ import footer from './footer.js';
 header()
 footer()
 contact()
+about()
