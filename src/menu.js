@@ -16,9 +16,36 @@ item7 = itemFactory("Quail Egg", "Stolen right from the nest, you can't have a m
 
 //create dom elements for each object, add each dom element to a div, add each div to the menu
 
-let clear = () => {
-    const myNode = document.querySelector('#content')
-    while (myNode.firstChild) {
-        myNode.removeChild(myNode.lastChild);
+// function getMenu {
+//     let menu = []
+//     for (i = 0; i < 7; i++) {
+//         menu.push(`item[${i}]`)
+
+//     }
+//     console.log(menu)
+//     return menu
+// }
+
+let menu = []
+menu.push(item1, item2, item3, item4, item5, item6, item7)
+console.log(menu)
+
+function getMenu() {
+    for (i = 0; i < 7; i++) {
+        let card = document.createElement(card)
+        card.setClass("menuitem")
+        let foodname = document.createElement("h1")
+        let fooddesc = document.createElement("p")
+        let season = document.createElement('span')
+        let foodpic = document.createElement('img')
+        foodname.innerText = menu[i].name
+        fooddesc.innerText = menu[i].desc
+        season.innerText = menu[i].season
+        foodpic.setAttribute("src", menu[i].image)
+        card.appendChild(foodname, fooddesc, season, foodpic)
+        document.querySelector('#content').appendChild(card)
+        console.log('worked')
+
     }
 }
+export default { getMenu }

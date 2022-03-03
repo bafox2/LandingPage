@@ -3,6 +3,9 @@ import header from './header.js';
 import contact from './contact.js';
 import footer from './footer.js';
 import about from './about.js';
+import init from './navigation';
+import getMenu from './menu'
+import menu from './menu';
 // import './welcome.js';
 // import './footer.js';
 //import Icon from './icon.png';
@@ -15,6 +18,8 @@ import about from './about.js';
 //add header
 //add footer
 header()
+init()
+menu()
 footer()
 contact()
 about()
