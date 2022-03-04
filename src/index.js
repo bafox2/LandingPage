@@ -1,25 +1,14 @@
-// // import './styles.css';
+import './styles.css';
 import header from './header.js';
 import contact from './contact.js';
+import { init, clear } from './navigation.js';
 import footer from './footer.js';
 import about from './about.js';
-import init from './navigation';
-import getMenu from './menu'
-import menu from './menu';
-// import './welcome.js';
-// import './footer.js';
-//import Icon from './icon.png';
-//Add the image to our existing div.
-// const myIcon = new Image();
-// myIcon.src = Icon;
-// element.appendChild(myIcon);
+import { getMenu } from './menu.js'
 
 
-//add header
-//add footer
 header()
 init()
-menu()
 footer()
-contact()
-about()
+getMenu()
+    //asdf

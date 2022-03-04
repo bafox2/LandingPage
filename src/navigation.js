@@ -9,11 +9,10 @@ let init = () => {
     content = document.createElement('div')
     content.setAttribute('id', 'content')
     document.querySelector('body').appendChild(content)
-    console.log('inited')
 }
 
 //document.querySelector('#content').appendChild(document.createElement)
 //document.body.append(Object.assign(document.createElement('div'),{textContent:"fd"}));
 
 
-export default { init, clear }
+export { init, clear }

@@ -1,8 +1,7 @@
 // import { Loader } from '@googlemaps/js-api-loader';
 
 
-
-let contact = (() => {
+function contact() {
     let contactdiv = document.createElement('div')
     contactdiv.classList.add("contact");
     let phone = document.createElement('p')
@@ -36,5 +35,5 @@ let contact = (() => {
     contactdiv.appendChild(address)
     contactdiv.appendChild(mapwrapper)
     document.querySelector('body').appendChild(contactdiv)
-})();
+};
 export default { contact };
