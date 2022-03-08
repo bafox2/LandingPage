@@ -9,7 +9,7 @@ h1 {
     font-size: x-large;
 }
 
-img {
+.menuitem img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -17,4 +17,15 @@ img {
 
 .menuitem {
     display: flex;
+}
+
+#map {
+    width: 500px;
+    height: 500px;
+}
+
+.swiper-slide {
+    max-height: 50%;
+    max-width: 50%;
+    align-content: center;
 }

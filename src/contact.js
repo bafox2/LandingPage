@@ -1,5 +1,19 @@
-// import { Loader } from '@googlemaps/js-api-loader';
+const loadGoogleMapsApi = require('load-google-maps-api');
 
+
+let mapWorking = () => {
+    loadGoogleMapsApi().then(function(googleMaps) {
+        new googleMaps.Map(document.querySelector('#map'), {
+            center: {
+                lat: 40.7484405,
+                lng: -73.9944191
+            },
+            zoom: 12
+        })
+    }).catch(function(error) {
+        console.error(error)
+    })
+}
 
 function contact() {
     let contactdiv = document.createElement('div')
@@ -11,29 +25,17 @@ function contact() {
     let mapwrapper = document.createElement('div')
     mapwrapper.id = ('map')
 
-    // const loader = new Loader({
-    //     apiKey: "AIzaSyCO_zgzQPLw8QumirmZWjHwgRDFrdIgitoM",
-    //     version: "weekly",
-    //     libraries: ["places"]
-    // });
-    // const mapOptions = {
-    //     center: {
-    //         lat: 0,
-    //         lng: 0
-    //     },
-    //     zoom: 4
-    // };
-    // loader.load()
-    //     .then((google) => {
-    //         new google.maps.Map(document.getElementById("map"), mapOptions);
-    //     })
-    //     .catch(e => {
-    //         // do something
-    //     });
 
     contactdiv.appendChild(phone)
     contactdiv.appendChild(address)
     contactdiv.appendChild(mapwrapper)
-    document.querySelector('body').appendChild(contactdiv)
+    document.querySelector('#content').appendChild(contactdiv)
 };
-export default { contact };
+
+let mapContent = () => {
+    contact()
+    mapWorking()
+}
+
+
+export default mapContent

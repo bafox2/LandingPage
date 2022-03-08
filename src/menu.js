@@ -6,7 +6,6 @@ import spring from './pageImages/beandish.jpg'
 import caviar from './pageImages/caviar.jpg'
 import oragami from './pageImages/oragami.jpg'
 import orange from './pageImages/orangedelight.jpg'
-//a
 import quail from './pageImages/quailegg.jpg'
 import italian from './pageImages/proscuetto.jpg'
 
@@ -27,7 +26,7 @@ let item7 = itemFactory("Quail Egg", "Stolen right from the nest, you can't have
 let menu = []
 menu.push(item1, item2, item3, item4, item5, item6, item7)
 
-let getMenu = () => {
+const getMenu = () => {
     for (let i = 0; i < 7; i++) {
         let card = document.createElement("card")
         card.classList.add("menuitem")
@@ -44,4 +43,4 @@ let getMenu = () => {
 
     }
 }
-export { getMenu }
+export default getMenu

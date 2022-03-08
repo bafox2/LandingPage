@@ -1,14 +1,16 @@
 import './styles.css';
-import header from './header.js';
-import contact from './contact.js';
 import { init, clear } from './navigation.js';
+import getMenu from './menu.js';
 import footer from './footer.js';
-import about from './about.js';
-import { getMenu } from './menu.js'
-
+import header from './header.js';
+import mapContent from './contact.js';
+import aboutContent from './about.js';
 
 header()
 init()
 footer()
 getMenu()
-    //asdf
+mapContent()
+aboutContent()
+
+//asdf
