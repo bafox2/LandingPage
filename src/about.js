@@ -29,21 +29,21 @@ let about = () => {
 let carosel = () => {
     const swiper = new Swiper('.mySwiper', {
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
+        // // If we need pagination
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        // // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
 
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
+        // // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
     });
 
 }
@@ -58,6 +58,9 @@ let caroselPics = () => {
         agePic.setAttribute("src", picLibrary[i])
         document.querySelector('.swiper-wrapper').appendChild(agePic)
     }
+    let swiperdesc = document.createElement('p')
+    swiperdesc.innerText = "Chef Fox through the years"
+    document.querySelector('.about-wrapper').appendChild(swiperdesc)
 }
 
 let aboutContent = () => {

@@ -5,8 +5,8 @@ let mapWorking = () => {
     loadGoogleMapsApi().then(function(googleMaps) {
         new googleMaps.Map(document.querySelector('#map'), {
             center: {
-                lat: 40.7484405,
-                lng: -73.9944191
+                lat: 41.500140,
+                lng: -81.698320
             },
             zoom: 12
         })
@@ -18,6 +18,8 @@ let mapWorking = () => {
 function contact() {
     let contactdiv = document.createElement('div')
     contactdiv.classList.add("contact");
+    let hours = document.createElement('p')
+    hours.innerText = "Hours: Open from 4:00 to sunset, closed on Tuesday"
     let phone = document.createElement('p')
     phone.innerText = "703-555-5555"
     let address = document.createElement('p')
@@ -26,6 +28,7 @@ function contact() {
     mapwrapper.id = ('map')
 
 
+    contactdiv.appendChild(hours)
     contactdiv.appendChild(phone)
     contactdiv.appendChild(address)
     contactdiv.appendChild(mapwrapper)

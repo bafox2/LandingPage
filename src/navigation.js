@@ -1,6 +1,7 @@
-import contact from './contact.js';
-import about from './about.js';
-import { getMenu } from './menu.js'
+import getMenu from './menu.js';
+import aboutContent from './about.js';
+import mapContent from './contact.js';
+
 
 
 let clear = () => {
@@ -23,7 +24,22 @@ let buttonAssignment = () => {
     let aboutbtn = document.querySelector('#about')
     let menubtn = document.querySelector('#menu')
     let contactbtn = document.querySelector('#contact')
+    aboutbtn.addEventListener('click', () => {
+        console.log('working')
+        clear()
+        aboutContent()
+    })
+    menubtn.addEventListener('click', () => {
+        console.log('working')
+        clear()
+        getMenu()
+    })
+    contactbtn.addEventListener('click', () => {
+        console.log('working')
+        clear()
+        mapContent()
+    })
 
 }
 
-export { init, clear }
+export { init, clear, buttonAssignment }

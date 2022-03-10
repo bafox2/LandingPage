@@ -26,7 +26,7 @@ let item7 = itemFactory("Quail Egg", "Stolen right from the nest, you can't have
 let menu = []
 menu.push(item1, item2, item3, item4, item5, item6, item7)
 
-const getMenu = () => {
+let getMenu = () => {
     for (let i = 0; i < 7; i++) {
         let card = document.createElement("card")
         card.classList.add("menuitem")
@@ -36,9 +36,12 @@ const getMenu = () => {
         let foodpic = document.createElement('img')
         foodname.innerText = menu[i].name
         fooddesc.innerText = menu[i].desc
-        season.innerText = menu[i].season
+        season.innerText = "Availability: " + menu[i].season
         foodpic.setAttribute("src", menu[i].image)
-        card.append(foodname, fooddesc, season, foodpic)
+        let picdiv = document.createElement('div')
+        picdiv.classList.add('picdiv')
+        picdiv.append(foodpic, fooddesc)
+        card.append(foodname, picdiv, season)
         document.querySelector('#content').appendChild(card)
 
     }

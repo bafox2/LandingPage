@@ -10,10 +10,10 @@ let header = () => {
     about.setAttribute('id', 'about')
     let menu = document.createElement('button')
     menu.innerText = "Menu"
-    about.setAttribute('id', 'menu')
+    menu.setAttribute('id', 'menu')
     let contact = document.createElement('button')
     contact.innerText = "Contact"
-    about.setAttribute('id', 'contact')
+    contact.setAttribute('id', 'contact')
 
     header.append(title, navbar)
     navbar.append(about, menu, contact)

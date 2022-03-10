@@ -5,8 +5,21 @@
     font-style: normal;
 } */
 
+body {
+    max-width: 100vw;
+    padding: 0px;
+    margin: 0px;
+}
+
 h1 {
     font-size: x-large;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .menuitem img {
@@ -17,6 +30,13 @@ h1 {
 
 .menuitem {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid burlywood;
+    border-right: 2px solid burlywood;
+    border-bottom-right-radius: 25%;
+    width: 50vw;
 }
 
 #map {
@@ -24,8 +44,43 @@ h1 {
     height: 500px;
 }
 
+
+/* 
 .swiper-slide {
     max-height: 50%;
     max-width: 50%;
     align-content: center;
+} */
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-wrapper {
+    max-width: 50vw;
+}
+
+.about-wrapper {
+    max-width: 50vw;
+}
+
+.picdiv {
+    display: flex;
+}
+
+.picdiv img {
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer {
+    text-align: center;
+    background: blue;
+}
+
+.about-wrapper {
+    text-align: center;
 }
